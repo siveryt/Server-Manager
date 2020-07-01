@@ -38,7 +38,7 @@ body {
 
 /* Style the links inside the navigation bar */
 
-.topnav a {
+.topnav form {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -55,7 +55,7 @@ body {
 
 /* Change the color of links on hover */
 
-.topnav a:hover {
+.topnav form:hover {
     background-color: #ddd;
     color: black;
 }
@@ -63,7 +63,18 @@ body {
 
 /* Add a color to the active/current link */
 
-.topnav a.active {
+.topnav form.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.topnav input {
+    border: none;
+    background: none;
+    padding: 0;
+    color: #f2f2f2;
+}
+
+.topnav form:hover .topnav input {
+    color: black;
 }

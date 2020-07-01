@@ -15,7 +15,7 @@
 
 <div class="topnav">
   <nav>
-    <a class="active" href="#home">Servers</a>
+    <form><input type=hidden name=servers><input type=submit value="Servers"></form>
     <a href="#news">Console</a>
     <a href="#contact">Server Configs</a>
     <a href="#about">Players</a>
