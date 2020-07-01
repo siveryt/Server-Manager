@@ -15,7 +15,7 @@
 
 <div class="topnav">
   <nav>
-    <a class="active" href="#home">Server</a>
+    <a class="active" href="#home">Servers</a>
     <a href="#news">Console</a>
     <a href="#contact">Server Configs</a>
     <a href="#about">Players</a>
@@ -25,6 +25,8 @@
     
   </nav>
 </div>
+
+<p>TEST</p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
