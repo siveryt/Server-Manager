@@ -1,4 +1,7 @@
-<?php session_start(); if ($_SESSION["login"]){ ?>
+<?php session_start(); if ($_SESSION["login"]){
+$content = isset($_POST["content"]) ? $_POST["content"] : "servers";
+$user = isset($_SESSION["user"]) ? $_SESSION["user"] : "N/A";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,18 +18,21 @@
 
 <div class="topnav">
   <nav>
-    <form><input type=hidden name=servers><input type=submit value="Servers"></form>
-    <a href="#news">Console</a>
-    <a href="#contact">Server Configs</a>
-    <a href="#about">Players</a>
-    <a href="#about">Worlds</a>
-    <a href="#about">Files</a>
-    <a href="#about">General Settings</a>
+    <form action="main.php" method=POST><input type=hidden name=content value="servers"><input <?php if($content == "servers") echo("class=active") ?> type=submit value="Servers"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="console"><input <?php if($content == "console") echo("class=active") ?> type=submit value="Console"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="configs"><input <?php if($content == "configs") echo("class=active") ?> type=submit value="Server Configs"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="player"><input <?php if($content == "player") echo("class=active") ?> type=submit value="Player"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="worlds"><input <?php if($content == "worlds") echo("class=active") ?> type=submit value="Worlds"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="files"><input <?php if($content == "files") echo("class=active") ?> type=submit value="Files"></form>
+    <form action="main.php" method=POST><input type=hidden name=content value="settings"><input <?php if($content == "settings") echo("class=active") ?> type=submit value="General Settings "></form>
     
   </nav>
+  <section id=account>
+    Logged in as <b><?php echo $user ?></b> - <a href=logout.php>Logout</a>
+  </section>
 </div>
 
-<p>TESST</p>
+<?php echo $content ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
