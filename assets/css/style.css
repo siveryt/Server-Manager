@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     text-align: center;
     vertical-align: middle;
@@ -22,7 +24,7 @@ body {
 .title {
     width: 100%;
     color: white;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     background-color: rgb(11, 184, 54);
 }
@@ -85,9 +87,60 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    display: inline-block;
+}
+
+#account button {
+    border: none;
+    height: 24.5px;
 }
 
 #account a {
     text-decoration: none;
     color: #f2f2f2;
+}
+
+.server {
+    padding: 10px;
+    border: solid rgb(117, 117, 117) 4px;
+    width: 300px;
+    margin: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.server h1 {
+    font-size: 30px;
+}
+
+.server h2 {
+    font-size: 24px;
+}
+
+.toolbar {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.toolbar input{
+    margin: 15px;
+    float: left;
+}
+
+.server_S {
+    padding: 10px;
+    border: solid rgb(11, 184, 54) 4px;
+    width: 300px;
+    margin: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.server_S h1 {
+    font-size: 30px;
+}
+
+.server_S h2 {
+    font-size: 24px;
 }

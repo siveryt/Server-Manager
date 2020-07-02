@@ -1,6 +1,13 @@
 <?php session_start(); if ($_SESSION["login"]){
 $content = isset($_POST["content"]) ? $_POST["content"] : "servers";
 $user = isset($_SESSION["user"]) ? $_SESSION["user"] : "N/A";
+$selectedServer = isset($_POST["selectedServer"]) ? $_POST["content"] : "N/A";
+
+if ($selectedServer != "N/A"){
+  $_SESSION["selectedServer"] == $selectedServer;
+} else{
+  $selectedServer == $_SESSION["selectedServer"];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,12 +34,14 @@ $user = isset($_SESSION["user"]) ? $_SESSION["user"] : "N/A";
     <form action="main.php" method=POST><input type=hidden name=content value="settings"><input <?php if($content == "settings") echo("class=active") ?> type=submit value="General Settings "></form>
     
   </nav>
+  
   <section id=account>
+    <form action="main.php" method=POST style="display: inline;"><select name=selectedServer><option value=Test>Test</option></select> <button type=submit>Set server</button></form>
     Logged in as <b><?php echo $user ?></b> - <a href=logout.php>Logout</a>
   </section>
 </div>
 
-<?php echo $content ?>
+<?php include("functions/servers.php") ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
