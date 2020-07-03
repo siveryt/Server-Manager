@@ -133,7 +133,6 @@ body {
     border: solid rgb(11, 184, 54) 4px;
     width: 300px;
     margin: 40px;
-    margin-top: 60px;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
 }
@@ -143,4 +142,12 @@ body {
 
 .server_S h2 {
     font-size: 24px;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.console #send {
+    width: 81px;
 }

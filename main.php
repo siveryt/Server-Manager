@@ -2,6 +2,7 @@
 $content = isset($_POST["content"]) ? $_POST["content"] : "servers";
 $user = isset($_SESSION["user"]) ? $_SESSION["user"] : "N/A";
 $selectedServer = isset($_POST["selectedServer"]) ? $_POST["content"] : "N/A";
+$serveraction = isset($_POST["serveraction"]) ? $_POST["serveraction"] : "N/A";
 
 if ($selectedServer != "N/A"){
   $_SESSION["selectedServer"] == $selectedServer;
@@ -41,7 +42,7 @@ if ($selectedServer != "N/A"){
   </section>
 </div>
 
-<?php include("functions/servers.php") ?>
+<?php include("functions/$content.php") ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
