@@ -11,9 +11,8 @@ $next = isset($_GET["next"]) ? $_GET["next"] : "N/A";
             $_SESSION["login"] = true;
             $_SESSION["user"] = $username;
             header("location: $next.php");
-        }else echo ("The User doesn't exist or the password is wrong! <a href=index.php>Back</a> 2");
-    }else echo ("The User doesn't exist or the password is wrong! <a href=index.php>Back</a> 1");
-    echo("$username : $password");
+        }else echo ("The User doesn't exist or the password is wrong! <a href=index.php>Back</a>");
+    }else echo ("The User doesn't exist or the password is wrong! <a href=index.php>Back</a>");
 
 }else echo("Please enter Username and Password! <a href=index.php>Back</a>") ?>
 <!DOCTYPE html>

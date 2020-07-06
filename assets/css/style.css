@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 body {
     text-align: center;
     vertical-align: middle;
@@ -49,8 +48,7 @@ body {
     font-size: 17px;
 }
 
-.topnav nav{
-    
+.topnav nav {
     margin-left: 300px;
 }
 
@@ -123,7 +121,7 @@ body {
     margin-left: 25px;
 }
 
-.toolbar input{
+.toolbar input {
     margin: 15px;
     float: left;
 }
@@ -136,6 +134,7 @@ body {
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
 }
+
 .server_S h1 {
     font-size: 30px;
 }
@@ -150,4 +149,61 @@ main {
 
 .console #send {
     width: 81px;
+}
+
+table {
+    text-align: left;
+}
+
+.player {
+    height: 150;
+    margin-left: 600px;
+    padding-bottom: 20px;
+    width: 700px;
+    border-bottom: solid rgb(139, 139, 139) 1px;
+}
+
+.player img {
+    float: left;
+}
+
+.player_Text h2 {
+    display: inline;
+}
+
+.player_Text {
+    margin-left: 100px;
+    text-align: left;
+}
+
+.player_Text form {
+    display: inline;
+}
+
+#addop {
+    color: #fff;
+    background-color: #2ea44f;
+    border-color: rgba(27, 31, 35, .15);
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .1), inset 0 1px 0 hsla(0, 0%, 100%, .03);
+}
+
+#remop {
+    color: #fff;
+    background-color: #cb2431;
+    border-color: rgba(27, 31, 35, .15);
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .1), inset 0 1px 0 hsla(0, 0%, 100%, .03);
+}
+
+#addwl {
+    color: #fff;
+    background-color: #2ea44f;
+    border-color: rgba(27, 31, 35, .15);
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .1), inset 0 1px 0 hsla(0, 0%, 100%, .03);
+}
+
+#remwl {
+    color: #fff;
+    background-color: #cb2431;
+    border-color: rgba(27, 31, 35, .15);
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .1), inset 0 1px 0 hsla(0, 0%, 100%, .03);
 }

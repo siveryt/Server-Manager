@@ -2,7 +2,7 @@
     <div class="toolbar">
         
     </div>
-    <main>
+    <main> 
         <h3>server.properties</h3>
         <form action=main.php method=POST>
         <table>
@@ -36,13 +36,9 @@
             <tr><td>Proxy/VPN from Players: </td><td><fieldset><input type=radio id=proxytrue name=prevent-proxy-connections value="false"><label for=proxytrue>Allow</label>&nbsp;<input type=radio id=proxyfalse name=prevent-proxy-connections value="true"><label for=proxyfalse>Deny</label></fieldset></td></tr>
             <tr><td>MOTD: </td><td><input type=text name=motd placeholder="MotD"></td></tr>
             
-            
-
             <input type=hidden name=content value="configs">
             <tr><td><input type=submit value="Save"></td></tr>
         </table>
         </form>
-        <h3>Other: </h3>
-        Port
     </main>
 <?php }else echo("Log-In before accesing the page! <a href=../index.php>Start</a>"); ?>
